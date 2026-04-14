@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f7fb;
+  color: #1e293b;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #475569;
+  font-size: 1.1rem;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.8rem;
+}
+
+.app-card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.app-description {
+  color: #334155;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.app-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #475569;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 0.75rem;
+}
+
+.app-size {
+  background: #eef2ff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.download-count {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.download-count::before {
+  content: "⬇️";
+  font-size: 0.9rem;
+}
+
+.btn-download {
+  background: #2563eb;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: auto;
+}
+
+.btn-download:hover {
+  background: #1d4ed8;
+}
+
+.loader {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #64748b;
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+}

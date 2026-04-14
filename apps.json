@@ -1,0 +1,23 @@
+[
+  {
+    "id": "speed-multimedia",
+    "nombre": "Speed Multimedia v2.2",
+    "descripcion": "Software creado por Piñirí para organizar y disfrutar toda tu multimedia de forma cómoda y sencilla.",
+    "tamaño": "160 MB",
+    "urlDescarga": "https://ejemplo.com/speed.zip"
+  },
+  {
+    "id": "bd-roturas",
+    "nombre": "BD Roturas v1.2",
+    "descripcion": "App de blogs compartido donde podrás encontrar o contribuir con TIPs de roturas solucionadas.",
+    "tamaño": "4.58 MB",
+    "urlDescarga": "https://ejemplo.com/bdroturas.apk"
+  },
+  {
+    "id": "sim-basic-tools",
+    "nombre": "Sim Basic Tools v2.6",
+    "descripcion": "Gestiona los paquetes de datos y saldo del móvil, y otras utilidades de la SIM.",
+    "tamaño": "137 KB",
+    "urlDescarga": "https://ejemplo.com/simtools.apk"
+  }
+]
