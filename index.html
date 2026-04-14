@@ -7,16 +7,60 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1> Tienda de Apps</h1>
-      <p>Herramientas para electrónica y más</p>
+  <!-- Menú lateral -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <h3> Menú</h3>
+      </div>
+      
+      <div class="donation-box">
+        <h4> Apoya el proyecto</h4>
+        <p>Transfermóvil:</p>
+        <div class="qr-placeholder">
+          <div class="qr-icon"></div>
+          <small>Escanea para donar</small>
+        </div>
+        <button class="btn-show-qr" onclick="alert('Aquí iría tu código QR de Transfermóvil')">Mostrar QR</button>
+      </div>
+      
+      <div class="contact-box">
+        <h4> Comunidad</h4>
+        <a href="https://chat.whatsapp.com/TU_ENLACE" target="_blank" class="contact-link whatsapp">
+          <span></span> WhatsApp
+        </a>
+        <a href="https://t.me/TU_ENLACE" target="_blank" class="contact-link telegram">
+          <span></span> Telegram
+        </a>
+      </div>
+      
+      <div class="sidebar-footer">
+        <p>© 2025 - Tu Tienda</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Botón para móvil (abrir menú) -->
+  <button class="menu-toggle" id="menuToggle"></button>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <header class="main-header">
+      <div class="header-badge"> Bienvenido</div>
+      <h1> <span>Tienda de Apps</span> para Electrónicos</h1>
+      <p>Herramientas, utilidades y software para tu taller y día a día</p>
+      <div class="header-stats">
+        <span> Descargas rápidas</span>
+        <span> Seguro y confiable</span>
+        <span> Siempre gratis</span>
+      </div>
     </header>
+
     <div class="apps-grid" id="appsContainer">
-      <!-- Las tarjetas se cargarán aquí -->
       <div class="loader">Cargando aplicaciones...</div>
     </div>
-  </div>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
